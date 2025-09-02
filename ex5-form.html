@@ -13,34 +13,35 @@
     <div class="container mt-5">
         <form>
             <div class="row g-3">
-                <div>
-                    <label for="fullName">Full Name</label>
-                    <input type="text" id="fullName">
+                <!-- col-12 (entire row) below 768px, switches to col-md-6 (2 items/row) between 768px and 991px, and then uses col-lg-4 (3 items/row) at 992px and above. -->
+                <div class="col-12 col-md-6 col-lg-4 mb-3">
+                    <label class="form-label" for="fullName">Full Name</label>
+                    <input class="form-control" type="text" id="fullName">
                 </div>
 
                 <!-- Email -->
-                <div>
-                    <label for="email">Email address</label>
-                    <input type="email" id="email">
+                <div class="col-12 col-md-6 col-lg-4 mb-3">
+                    <label class="form-label" for="email">Email address</label>
+                    <input class="form-control" type="email" id="email">
                 </div>
 
                 <!-- Gender -->
-                <div>
-                    <label>Gender</label>
-                    <div>
-                        <input type="radio" name="gender" id="male" value="male">
-                        <label for="male">Male</label>
+                <div class="col-12 col-md-6 col-lg-4 mb-3">
+                    <label class="form-label d-block">Gender</label>
+                    <div class="form check d-inline-block me-3">
+                        <input class="form-check-input" type="radio" name="gender" id="male" value="male">
+                        <label class="form-check-label" for="male">Male</label>
                     </div>
-                    <div>
-                        <input type="radio" name="gender" id="female" value="female">
-                        <label for="female">Female</label>
+                    <div class="form check d-inline-block" >
+                        <input class="form-check-input" type="radio" name="gender" id="female" value="female">
+                        <label class="form-check-label" for="female">Female</label>
                     </div>
                 </div>
 
                 <!-- Country -->
-                <div>
-                    <label for="country">Country</label>
-                    <select id="country">
+                <div class="col-12 col-md-6 col-lg-4 mb-3">
+                    <label class="form-label" for="country">Country</label>
+                    <select class="form-select" id="country">
                         <option selected>Select your country</option>
                         <option>USA</option>
                         <option>Singapore</option>
@@ -49,24 +50,24 @@
                 </div>
 
                 <!-- Subscribe -->
-                <div>
-                    <div class="mt-4">
-                        <input type="checkbox" id="subscribe">
-                        <label for="subscribe">
+                <div class="col-12 col-md-6 col-lg-4 mb-3">
+                    <div class="mt-4 form-check">
+                        <input class="form-check-input" type="checkbox" id="subscribe">
+                        <label class="form-check-label" for="subscribe">
                             Subscribe to newsletter
                         </label>
                     </div>
                 </div>
 
                 <!-- Message -->
-                <div>
-                    <label for="message">Message</label>
-                    <textarea id="message" rows="4"></textarea>
+                <div class="mb-3">
+                    <label class="form-label" for="message">Message</label>
+                    <textarea class="form-control" id="message" rows="4"></textarea>
                 </div>
 
                 <!-- Submit Button -->
-                <div>
-                    <button type="submit" class="btn btn-primary mt-3">Submit</button>
+                <div class="text-center">
+                    <button type="submit" class="btn btn-primary">Submit</button>
                 </div>
             </div>
         </form>
