@@ -20,7 +20,42 @@
 <body>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-
+    <div class="container-fluid"> <!-- fluid max the length; text-center make all the content in this div cente-->
+        <div class="row justify-content-center"> <!-- slide 14 - justify-content-center: content within this div to be centralise -->
+            <!-- If your screen width is smaller than the breakpoint's (sm,md,lg) max container width, the container will stretch to fill the screen — basically fullscreen on smaller devices. -->
+            <div class="box col-sm-4">
+                1 of 2
+            </div>
+            <div class="box col-sm-4">
+                2 of 2
+            </div>
+        </div>
+        <div class="row">
+            <div class="box col-md"> 
+                1 of 3
+            </div>
+            <div class="box col-md-6">
+                2 of 3 (wider)
+            </div>
+            <div class="box col-md">
+                3 of 3
+            </div>
+        </div>
+        <div class="row">
+            <div class="box col-lg-2">
+                1 of 4
+            </div>
+            <div class="box col-lg-4">
+                2 of 4
+            </div>
+            <div class="box col-lg-4">
+                3 of 4
+            </div>
+            <div class="box col-lg-2">
+                4 of 4
+            </div>
+        </div>
+    </div>
     
 </body>
 </html>
